@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionViewCell" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="Plateforme" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="103" height="98"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3SP-vF-TJm">
+                        <rect key="frame" x="0.0" y="0.0" width="103" height="64"/>
+                    </imageView>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="something interesting to learn" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpB-ST-jxe" userLabel="legendLabel">
+                        <rect key="frame" x="0.0" y="64" width="103" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3SP-vF-TJm" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-17" id="LsM-Dn-VeV"/>
+                <constraint firstItem="3SP-vF-TJm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WbC-Ep-feT"/>
+                <constraint firstItem="IpB-ST-jxe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YQN-7v-qoo"/>
+                <constraint firstAttribute="trailing" secondItem="3SP-vF-TJm" secondAttribute="trailing" id="fjH-Tf-11J"/>
+                <constraint firstItem="3SP-vF-TJm" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="nMc-nL-MR9"/>
+                <constraint firstAttribute="bottom" secondItem="IpB-ST-jxe" secondAttribute="bottom" id="qRC-dI-Eoj"/>
+                <constraint firstAttribute="trailing" secondItem="IpB-ST-jxe" secondAttribute="trailing" id="rCF-RM-4bd"/>
+                <constraint firstItem="3SP-vF-TJm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" multiplier="0.7" id="teZ-dI-KYa"/>
+                <constraint firstItem="IpB-ST-jxe" firstAttribute="top" secondItem="3SP-vF-TJm" secondAttribute="bottom" id="x5H-Nh-iXO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="103" height="98"/>
+            <connections>
+                <outlet property="imageView" destination="3SP-vF-TJm" id="JwU-rc-2zW"/>
+                <outlet property="legendLabel" destination="IpB-ST-jxe" id="Lb3-97-QW5"/>
+            </connections>
+            <point key="canvasLocation" x="99.275362318840592" y="97.767857142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>
